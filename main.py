@@ -28,4 +28,19 @@ def fibonacci_sequence_v2(sequence_length):
   return fibonacci_sequence_list
 #fb = fibonacci_sequence(10)
 #print(fb)
-    
+ 
+def fibonacci_sequence_v3(sequence_length):
+  if sequence_length == 0: return []
+  if sequence_length == 1: return [0]
+  
+  fibonacci_sequence_list = [0, 1]
+  if sequence_length == 2: return fibonacci_sequence
+  
+  for i in range(2, sequence_length):
+    new_value = fibonacci_sequence_list[-1] + fibonacci_sequence_list[-2]
+    fibonacci_sequence_list.append(new_value)
+      
+  return fibonacci_sequence_list
+
+fb3 = fibonacci_sequence_v3(20)
+print(fb3)   
