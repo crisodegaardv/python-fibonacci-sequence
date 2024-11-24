@@ -29,7 +29,7 @@ def fibonacci_sequence_v2(sequence_length):
 #fb = fibonacci_sequence(10)
 #print(fb)
  
-def fibonacci_sequence_v3(sequence_length):
+def fibonacci_sequence_v3(sequence_length: int) -> list[int]:
   if sequence_length == 0: return []
   if sequence_length == 1: return [0]
   
